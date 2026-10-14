@@ -27,10 +27,10 @@ stdenv.mkDerivation {
   #   pkg-config --exists mutter-clutter-17 && echo "=== mutter-clutter-17 FOUND after" || echo "=== mutter-clutter-17 NOT FOUND after"
   # '';
 
-  postPatch = ''
-    sed -i "s/mutter_api_version = '17'/mutter_api_version = '18'/" meson.build
-    sed -i "s/mutter_req = '>= 49.0'/mutter_req = '>= 50.0'/" meson.build
-  '';
+  # postPatch = ''
+  #   sed -i "s/mutter_api_version = '17'/mutter_api_version = '18'/" meson.build
+  #   sed -i "s/mutter_req = '>= 49.0'/mutter_req = '>= 50.0'/" meson.build
+  # '';
 
   buildInputs = [
     mutter
