@@ -1,6 +1,6 @@
 {
   description = "Nix flake of gnome-rounded-blur";
-  inputs.nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-26.05";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs";
 
   outputs = { self, nixpkgs }:
     let
