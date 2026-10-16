@@ -4,12 +4,12 @@
 
 stdenv.mkDerivation {
   pname = "gnome-rounded-blur";
-  version = "1.0.0";
+  version = "1.0.1";
 
   src = fetchFromGitHub {
     owner = "kancko";
     repo = "gnome-rounded-blur";
-    tag = "v1.0.0";
+    tag = "v1.0.1";
     hash = "sha256-sknZgT3wYJeTjJ9wVQMn0d5p92Y41MfHhWIcj7jCEmA=";
     fetchSubmodules = false;
   };
